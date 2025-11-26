@@ -3,12 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Gig Graph Dashboard</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
 </head>
 <body>
   <h1>Gig Graph</h1>
   <p>Automatically updated data from private sources.</p>
 
-  <!-- Embed dashboard -->
-  <iframe src="output.html" style="width:100%; height:600px; border:none;"></iframe>
+  <label for="yearFilter">Filter by Year:</label>
+  <select id="yearFilter">
+    <option value="all">All</option>
+  </select>
+
+  <table id="dataTable">
+    <thead></thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function loadData() {
+      const res = await fetch('data.json');
+      const data = await res.json();
+
+      // Populate year filter
+      const years = [...new Set(data.map(d => d.Year))].sort((a,b)=>b-a);
+      const filter = document.getElementById('yearFilter');
+      years.forEach(y => {
+        const opt = document.createElement('option');
+        opt.value = y;
+        opt.textContent = y;
+        filter.appendChild(opt);
+      });
+
+      function renderTable(year) {
+        const table = document.getElementById('dataTable');
+        const tbody = table.querySelector('tbody');
+        const thead = table.querySelector('thead');
+
+        // Clear previous
+        tbody.innerHTML = '';
+        thead.innerHTML = '';
+
+        if(data.length === 0){
+          tbody.innerHTML = '<tr><td colspan="10">No data available</td></tr>';
+          return;
+        }
+
+        // Columns
+        const columns = Object.keys(data[0]);
+        thead.innerHTML = '<tr>' + columns.map(c=>`<th>${c}</th>`).join('') + '</tr>';
+
+        // Rows
+        let rows = data;
+        if(year && year!=='all') rows = rows.filter(r => r.Year == year);
+        rows.forEach(r=>{
+          const tr = document.createElement('tr');
+          tr.innerHTML = columns.map(c=>`<td>${r[c]}</td>`).join('');
+          tbody.appendChild(tr);
+        });
+      }
+
+      filter.addEventListener('change', ()=>renderTable(filter.value));
+
+      // Initial render
+      renderTable('all');
+    }
+
+    loadData();
+  </script>
 </body>
 </html>
