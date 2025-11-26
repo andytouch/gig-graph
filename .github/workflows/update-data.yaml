@@ -26,6 +26,10 @@ jobs:
         SHEET_ID: ${{ secrets.SHEET_ID }}
       run: python process_sheet.py
 
+    - uses: actions/checkout@v3
+      with:
+        token: ${{ secrets.PAT_TOKEN }}
+
     - name: Commit processed data
       run: |
         git config user.name "gig-graph-bot"
