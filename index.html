@@ -38,4 +38,51 @@
         return;
       }
 
-      // Get the name of the first column (assume first column is "Year")
+      const firstColumn = Object.keys(data[0])[0]; // Date column
+
+      // Populate year filter (extract year from date)
+      const years = [...new Set(data.map(d => new Date(d[firstColumn]).getFullYear()))].sort((a,b)=>b-a);
+      const filter = document.getElementById('yearFilter');
+      years.forEach(y => {
+        const opt = document.createElement('option');
+        opt.value = y;
+        opt.textContent = y;
+        filter.appendChild(opt);
+      });
+
+      function renderTable(year) {
+        const table = document.getElementById('dataTable');
+        const tbody = table.querySelector('tbody');
+        const thead = table.querySelector('thead');
+
+        tbody.innerHTML = '';
+        thead.innerHTML = '';
+
+        const columns = Object.keys(data[0]);
+        thead.innerHTML = '<tr>' + columns.map(c=>`<th>${c}</th>`).join('') + '</tr>';
+
+        let rows = data;
+        if(year && year!=='all') {
+          rows = rows.filter(r => new Date(r[firstColumn]).getFullYear() == year);
+        }
+
+        rows.forEach(r=>{
+          const tr = document.createElement('tr');
+          tr.innerHTML = columns.map(c=>`<td>${r[c]}</td>`).join('');
+          tbody.appendChild(tr);
+        });
+
+        if(rows.length === 0){
+          tbody.innerHTML = `<tr><td colspan="${columns.length}">No data for ${year}</td></tr>`;
+        }
+      }
+
+      filter.addEventListener('change', ()=>renderTable(filter.value));
+
+      renderTable('all');
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
