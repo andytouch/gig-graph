@@ -56,6 +56,6 @@ else:
 
 # Write output.html
 with open("output.html", "w") as f:
-    f.write(html)
+    f.write(html if data else "<p>No data available</p>")
 
 print("output.html generated successfully.")
