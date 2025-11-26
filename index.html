@@ -4,9 +4,14 @@
   <meta charset="UTF-8">
   <title>Gig Graph Dashboard</title>
   <style>
-    table { border-collapse: collapse; width: 100%; }
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #333; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
     th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-    th { background-color: #f2f2f2; }
+    th { background-color: #f2f2f2; cursor: pointer; }
+    tr:hover { background-color: #f9f9f9; }
+    label { font-weight: bold; margin-right: 5px; }
+    select { padding: 5px; }
   </style>
 </head>
 <body>
@@ -28,51 +33,9 @@
       const res = await fetch('data.json');
       const data = await res.json();
 
-      // Populate year filter
-      const years = [...new Set(data.map(d => d.Year))].sort((a,b)=>b-a);
-      const filter = document.getElementById('yearFilter');
-      years.forEach(y => {
-        const opt = document.createElement('option');
-        opt.value = y;
-        opt.textContent = y;
-        filter.appendChild(opt);
-      });
-
-      function renderTable(year) {
-        const table = document.getElementById('dataTable');
-        const tbody = table.querySelector('tbody');
-        const thead = table.querySelector('thead');
-
-        // Clear previous
-        tbody.innerHTML = '';
-        thead.innerHTML = '';
-
-        if(data.length === 0){
-          tbody.innerHTML = '<tr><td colspan="10">No data available</td></tr>';
-          return;
-        }
-
-        // Columns
-        const columns = Object.keys(data[0]);
-        thead.innerHTML = '<tr>' + columns.map(c=>`<th>${c}</th>`).join('') + '</tr>';
-
-        // Rows
-        let rows = data;
-        if(year && year!=='all') rows = rows.filter(r => r.Year == year);
-        rows.forEach(r=>{
-          const tr = document.createElement('tr');
-          tr.innerHTML = columns.map(c=>`<td>${r[c]}</td>`).join('');
-          tbody.appendChild(tr);
-        });
+      if(data.length === 0){
+        document.getElementById('dataTable').innerHTML = "<tr><td>No data available</td></tr>";
+        return;
       }
 
-      filter.addEventListener('change', ()=>renderTable(filter.value));
-
-      // Initial render
-      renderTable('all');
-    }
-
-    loadData();
-  </script>
-</body>
-</html>
+      // Get the name of the first column (assume first column is "Year")
