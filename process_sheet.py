@@ -19,9 +19,9 @@ gc = gspread.authorize(creds)
 sheet = gc.open_by_key(sheet_id).sheet1
 data = sheet.get_all_records()
 
-# Calculate totals
+## Calculate totals
 total_concerts = len(data)
-unique_artists = len(set(row.get('Artist', '').strip() for row in data if row.get('Artist', '').strip()))
+unique_artists = len(set(str(row.get('Artist', '')).strip() for row in data if str(row.get('Artist', '')).strip()))
 
 # Generate JSON with both raw data and summary
 output = {
