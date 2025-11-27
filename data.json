@@ -486,6 +486,51 @@
     "Setlist": ""
   },
   {
+    "Date": "",
+    "Artist": "",
+    "Festival": "",
+    "Venue": "",
+    "City": "",
+    "Country": "",
+    "Setlist": ""
+  },
+  {
+    "Date": "5-12-19",
+    "Artist": "Bjork",
+    "Festival": "",
+    "Venue": "Royal Arena",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/bjork/2019/royal-arena-copenhagen-denmark-139a656d.html"
+  },
+  {
+    "Date": "8-10-22",
+    "Artist": "Placebo",
+    "Festival": "",
+    "Venue": "Store Vega",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/placebo/2022/store-vega-copenhagen-denmark-63b1c2bf.html"
+  },
+  {
+    "Date": "6-11-22",
+    "Artist": "Frank Carter & Rattlesnakes",
+    "Festival": "",
+    "Venue": "Store Vega",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/frank-carter-and-the-rattlesnakes/2022/store-vega-copenhagen-denmark-6bbe227e.html"
+  },
+  {
+    "Date": "12-11-22",
+    "Artist": "Wolf Alice",
+    "Festival": "",
+    "Venue": "Store Vega",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/wolf-alice/2022/store-vega-copenhagen-denmark-3bbe605c.html"
+  },
+  {
     "Date": "28-1-23",
     "Artist": "Malevolence",
     "Festival": "",
@@ -1476,16 +1521,16 @@
     "Setlist": ""
   },
   {
-    "Date": "",
+    "Date": "15-2-24",
     "Artist": "The Callous Daoboys",
     "Festival": "",
     "Venue": "Amager Bio",
     "City": "Copenhagen",
     "Country": "Denmark",
-    "Setlist": ""
+    "Setlist": "https://www.setlist.fm/setlist/the-callous-daoboys/2024/amager-bio-copenhagen-denmark-63ad9e63.html"
   },
   {
-    "Date": "",
+    "Date": "15-2-24",
     "Artist": "Unprocessed",
     "Festival": "",
     "Venue": "Amager Bio",
@@ -1494,7 +1539,7 @@
     "Setlist": ""
   },
   {
-    "Date": "",
+    "Date": "15-2-24",
     "Artist": "Tesseract",
     "Festival": "",
     "Venue": "Amager Bio",
