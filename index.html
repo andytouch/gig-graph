@@ -8,7 +8,7 @@
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { color: #333; margin-bottom: 20px; }
     .summary { margin-bottom: 30px; }
-    .chart-container { width: 80%; max-width: 600px; margin-bottom: 40px; }
+    .chart-container { width: 80%; max-width: 700px; margin-bottom: 50px; }
   </style>
 </head>
 <body>
@@ -20,8 +20,18 @@
   </div>
 
   <div class="chart-container">
+    <h2>Concerts per Year</h2>
+    <canvas id="yearChart"></canvas>
+  </div>
+
+  <div class="chart-container">
     <h2>Concerts per Country</h2>
     <canvas id="countryChart"></canvas>
+  </div>
+
+  <div class="chart-container">
+    <h2>Top 10 Most Seen Artists</h2>
+    <canvas id="artistChart"></canvas>
   </div>
 
   <script>
@@ -33,36 +43,89 @@
       document.getElementById('totalConcerts').textContent = json.summary.total_concerts;
       document.getElementById('totalMusicians').textContent = json.summary.total_musicians;
 
-      // Count concerts per country
+      // --- Concerts per Year ---
+      const yearCounts = {};
+      json.rows.forEach(row => {
+        if(row.Date){
+          const year = new Date(row.Date).getFullYear();
+          yearCounts[year] = (yearCounts[year] || 0) + 1;
+        }
+      });
+      const yearLabels = Object.keys(yearCounts).sort();
+      const yearData = yearLabels.map(y => yearCounts[y]);
+
+      new Chart(document.getElementById('yearChart'), {
+        type: 'bar',
+        data: {
+          labels: yearLabels,
+          datasets: [{
+            label: 'Concerts per Year',
+            data: yearData,
+            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { display: false } },
+          scales: { y: { beginAtZero: true, precision: 0 } }
+        }
+      });
+
+      // --- Concerts per Country ---
       const countryCounts = {};
       json.rows.forEach(row => {
         const country = row.Country || 'Unknown';
         countryCounts[country] = (countryCounts[country] || 0) + 1;
       });
+      const countryLabels = Object.keys(countryCounts);
+      const countryData = Object.values(countryCounts);
 
-      const labels = Object.keys(countryCounts);
-      const data = Object.values(countryCounts);
-
-      // Pie chart
       new Chart(document.getElementById('countryChart'), {
         type: 'pie',
         data: {
-          labels: labels,
+          labels: countryLabels,
           datasets: [{
             label: 'Concerts per Country',
-            data: data,
+            data: countryData,
             backgroundColor: [
               '#FF6384','#36A2EB','#FFCE56','#4BC0C0','#9966FF','#FF9F40','#C9CBCF'
             ]
           }]
         },
-        options: {
-          responsive: true,
-          plugins: {
-            legend: { position: 'right' }
-          }
+        options: { responsive: true, plugins: { legend: { position: 'right' } } }
+      });
+
+      // --- Top 10 Most Seen Artists ---
+      const artistCounts = {};
+      json.rows.forEach(row => {
+        if(row.Artist && row.Artist !== 'N/A'){
+          artistCounts[row.Artist] = (artistCounts[row.Artist] || 0) + 1;
         }
       });
+      const topArtists = Object.entries(artistCounts)
+        .sort((a,b)=>b[1]-a[1])
+        .slice(0,10);
+      const artistLabels = topArtists.map(([a,_]) => a);
+      const artistData = topArtists.map(([_,v]) => v);
+
+      new Chart(document.getElementById('artistChart'), {
+        type: 'bar',
+        data: {
+          labels: artistLabels,
+          datasets: [{
+            label: 'Concerts',
+            data: artistData,
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+          }]
+        },
+        options: {
+          responsive: true,
+          indexAxis: 'y', // horizontal bar chart
+          plugins: { legend: { display: false } },
+          scales: { x: { beginAtZero: true, precision: 0 } }
+        }
+      });
+
     }
 
     loadDashboard();
