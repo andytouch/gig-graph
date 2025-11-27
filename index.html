@@ -31,24 +31,39 @@
 
       columns.forEach(col => {
         const counts = {};
+
         data.forEach(row => {
-          const val = row[col] || 'N/A';
+          let val = row[col];
+          if(!val || val === 'N/A') return; // skip empty/N/A
+
+          // Special case: Date → use year
+          if(col.toLowerCase() === 'date'){
+            val = new Date(val).getFullYear();
+          }
+
           counts[val] = (counts[val] || 0) + 1;
         });
 
-        // Create section for this column
+        // For Artist, only keep top 10
+        let entries = Object.entries(counts);
+        if(col.toLowerCase() === 'artist'){
+          entries = entries.sort((a,b)=>b[1]-a[1]).slice(0,10);
+        } else {
+          entries = entries.sort((a,b)=>b[1]-a[1]); // sort by count descending
+        }
+
+        if(entries.length === 0) return; // skip column if no valid data
+
         const h2 = document.createElement('h2');
         h2.textContent = col;
         container.appendChild(h2);
 
         const ul = document.createElement('ul');
-        Object.entries(counts)
-          .sort((a,b) => b[1]-a[1]) // sort descending by count
-          .forEach(([val,count]) => {
-            const li = document.createElement('li');
-            li.textContent = `${val}: ${count}`;
-            ul.appendChild(li);
-          });
+        entries.forEach(([val,count]) => {
+          const li = document.createElement('li');
+          li.textContent = `${val}: ${count}`;
+          ul.appendChild(li);
+        });
 
         container.appendChild(ul);
       });
