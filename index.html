@@ -1,75 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Gig Graph Column Tallies</title>
+  <meta charset="UTF-8" />
+  <title>Gig Graph – Summary</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      max-width: 700px;
+    }
     h1 { color: #333; }
-    h2 { margin-top: 20px; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { padding: 2px 0; font-size: 1em; }
+    .stat {
+      font-size: 28px;
+      margin: 20px 0;
+      padding: 15px;
+      background: #f4f4f4;
+      border-left: 6px solid #4CAF50;
+    }
   </style>
 </head>
 <body>
-  <h1>Gig Graph Column Tallies</h1>
-  <div id="tallies"></div>
+
+  <h1>Gig Graph – Summary</h1>
+  <p>This page shows overall totals based on your concert history.</p>
+
+  <div id="totalConcerts" class="stat">Loading total concerts…</div>
+  <div id="totalArtists" class="stat">Loading total unique artists…</div>
 
   <script>
-    async function loadTallies() {
-      const res = await fetch('data.json');
-      const data = await res.json();
-      const container = document.getElementById('tallies');
-      container.innerHTML = '';
+    async function loadData() {
+      const response = await fetch("data.json");
+      const data = await response.json();
 
-      if(data.length === 0){
-        container.innerHTML = "<p>No data available</p>";
-        return;
-      }
+      // 1️⃣ Total number of concerts
+      const totalConcerts = data.length;
 
-      const columns = Object.keys(data[0]);
-
-      columns.forEach(col => {
-        const counts = {};
-
-        data.forEach(row => {
-          let val = row[col];
-          if(!val || val === 'N/A') return; // skip empty/N/A
-
-          // Special case: Date → use year
-          if(col.toLowerCase() === 'date'){
-            val = new Date(val).getFullYear();
-          }
-
-          counts[val] = (counts[val] || 0) + 1;
-        });
-
-        // For Artist, only keep top 10
-        let entries = Object.entries(counts);
-        if(col.toLowerCase() === 'artist'){
-          entries = entries.sort((a,b)=>b[1]-a[1]).slice(0,10);
-        } else {
-          entries = entries.sort((a,b)=>b[1]-a[1]); // sort by count descending
+      // 2️⃣ Total number of unique artists (ignore empty or N/A)
+      const artistSet = new Set();
+      data.forEach(row => {
+        const artist = row.Artist;
+        if (artist && artist !== "N/A") {
+          artistSet.add(artist.trim());
         }
-
-        if(entries.length === 0) return; // skip column if no valid data
-
-        const h2 = document.createElement('h2');
-        h2.textContent = col;
-        container.appendChild(h2);
-
-        const ul = document.createElement('ul');
-        entries.forEach(([val,count]) => {
-          const li = document.createElement('li');
-          li.textContent = `${val}: ${count}`;
-          ul.appendChild(li);
-        });
-
-        container.appendChild(ul);
       });
+      const totalArtists = artistSet.size;
+
+      // Update DOM
+      document.getElementById("totalConcerts").innerHTML =
+        `🎵 Total Concerts: <strong>${totalConcerts}</strong>`;
+
+      document.getElementById("totalArtists").innerHTML =
+        `👤 Total Unique Musicians: <strong>${totalArtists}</strong>`;
     }
 
-    loadTallies();
+    loadData();
   </script>
+
 </body>
 </html>
