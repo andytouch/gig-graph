@@ -486,13 +486,49 @@
     "Setlist": ""
   },
   {
-    "Date": "",
-    "Artist": "",
+    "Date": "19-1-18",
+    "Artist": "Wolf Alice",
     "Festival": "",
-    "Venue": "",
-    "City": "",
-    "Country": "",
-    "Setlist": ""
+    "Venue": "Lille Vega",
+    "City": "Frederiksberg",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/wolf-alice/2018/lille-vega-copenhagen-denmark-3be16070.html"
+  },
+  {
+    "Date": "19-9-18",
+    "Artist": "Inter arma",
+    "Festival": "",
+    "Venue": "Lille Vega",
+    "City": "Frederiksberg",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/inter-arma/2018/lille-vega-copenhagen-denmark-1be9d184.html"
+  },
+  {
+    "Date": "20-9-18",
+    "Artist": "Deafheaven",
+    "Festival": "",
+    "Venue": "Lille Vega",
+    "City": "Frederiksberg",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/deafheaven/2018/vega-copenhagen-denmark-33e9e861.html"
+  },
+  {
+    "Date": "12-12-18",
+    "Artist": "A Perfect Circle",
+    "Festival": "",
+    "Venue": "Forum",
+    "City": "Frederiksberg",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/a-perfect-circle/2018/forum-black-box-copenhagen-denmark-b94a936.html"
+  },
+  {
+    "Date": "11-2-19",
+    "Artist": "Twenty One Pilots",
+    "Festival": "",
+    "Venue": "Royal Arena",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/twenty-one-pilots/2019/royal-arena-copenhagen-denmark-739516a1.html"
   },
   {
     "Date": "5-12-19",
@@ -502,6 +538,51 @@
     "City": "Copenhagen",
     "Country": "Denmark",
     "Setlist": "https://www.setlist.fm/setlist/bjork/2019/royal-arena-copenhagen-denmark-139a656d.html"
+  },
+  {
+    "Date": "11-12-19",
+    "Artist": "Refused",
+    "Festival": "",
+    "Venue": "Lille Vega",
+    "City": "Frederiksberg",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/refused/2019/lille-vega-copenhagen-denmark-539a4331.html"
+  },
+  {
+    "Date": "20-2-20",
+    "Artist": "Slipknot",
+    "Festival": "",
+    "Venue": "Royal Arena",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/slipknot/2020/royal-arena-copenhagen-denmark-63987a03.html"
+  },
+  {
+    "Date": "9-10-21",
+    "Artist": "The Hives",
+    "Festival": "",
+    "Venue": "Kulturbolaget",
+    "City": "Malmo",
+    "Country": "Sweden",
+    "Setlist": "https://www.setlist.fm/setlist/the-hives/2021/kulturbolaget-malmo-sweden-438d2fb3.html"
+  },
+  {
+    "Date": "23-4-22",
+    "Artist": "Tool",
+    "Festival": "",
+    "Venue": "Royal Arena",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/tool/2022/royal-arena-copenhagen-denmark-7bb6126c.html"
+  },
+  {
+    "Date": "29-9-22",
+    "Artist": "Biffy Clyro",
+    "Festival": "",
+    "Venue": "Den Gra Hal",
+    "City": "Copenhagen",
+    "Country": "Denmark",
+    "Setlist": "https://www.setlist.fm/setlist/biffy-clyro/2022/den-gra-hal-copenhagen-denmark-4bb19b32.html"
   },
   {
     "Date": "8-10-22",
