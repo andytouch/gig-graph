@@ -6,15 +6,29 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { color: #333; }
+    h2 { margin-top: 20px; }
     ul { list-style-type: none; padding-left: 0; }
-    li { padding: 5px 0; font-size: 1.1em; }
+    li { padding: 3px 0; font-size: 1em; }
   </style>
 </head>
 <body>
-  <h1>Gig Graph Summary</h1>
-  <p>Automatically updated totals per year:</p>
+  <h1>Gig Graph Summary Dashboard</h1>
+  <p>Automatically updated statistics:</p>
 
-  <ul id="summaryList"></ul>
+  <h2>Number of entries per year</h2>
+  <ul id="yearCount"></ul>
+
+  <h2>Tally per Country</h2>
+  <ul id="countryCount"></ul>
+
+  <h2>Tally per City</h2>
+  <ul id="cityCount"></ul>
+
+  <h2>Tally per Venue</h2>
+  <ul id="venueCount"></ul>
+
+  <h2>Top 10 Artists</h2>
+  <ul id="artistCount"></ul>
 
   <script>
     async function loadSummary() {
@@ -22,28 +36,53 @@
       const data = await res.json();
 
       if(data.length === 0){
-        document.getElementById('summaryList').innerHTML = "<li>No data available</li>";
+        const lists = ['yearCount','countryCount','cityCount','venueCount','artistCount'];
+        lists.forEach(id => document.getElementById(id).innerHTML = "<li>No data available</li>");
         return;
       }
 
-      const firstColumn = Object.keys(data[0])[0]; // assume first column is date/year
-      const counts = {};
+      const firstColumn = Object.keys(data[0])[0]; // Date column
+      const counts = {
+        year: {},
+        country: {},
+        city: {},
+        venue: {},
+        artist: {}
+      };
 
       data.forEach(row => {
+        // Year
         const year = new Date(row[firstColumn]).getFullYear();
-        counts[year] = (counts[year] || 0) + 1;
+        counts.year[year] = (counts.year[year] || 0) + 1;
+
+        // Country
+        if(row.Country) counts.country[row.Country] = (counts.country[row.Country] || 0) + 1;
+        // City
+        if(row.City) counts.city[row.City] = (counts.city[row.City] || 0) + 1;
+        // Venue
+        if(row.Venue) counts.venue[row.Venue] = (counts.venue[row.Venue] || 0) + 1;
+        // Artist
+        if(row.Artist) counts.artist[row.Artist] = (counts.artist[row.Artist] || 0) + 1;
       });
 
-      // Sort years descending
-      const sortedYears = Object.keys(counts).sort((a,b)=>b-a);
+      function populateList(id, obj, topN=null){
+        const ul = document.getElementById(id);
+        ul.innerHTML = '';
+        let entries = Object.entries(obj);
+        if(topN) entries = entries.sort((a,b)=>b[1]-a[1]).slice(0,topN);
+        else entries = entries.sort((a,b)=>b[1]-a[1]);
+        entries.forEach(([k,v])=>{
+          const li = document.createElement('li');
+          li.textContent = `${k}: ${v}`;
+          ul.appendChild(li);
+        });
+      }
 
-      const ul = document.getElementById('summaryList');
-      ul.innerHTML = '';
-      sortedYears.forEach(y => {
-        const li = document.createElement('li');
-        li.textContent = `${y}: ${counts[y]} entries`;
-        ul.appendChild(li);
-      });
+      populateList('yearCount', counts.year);
+      populateList('countryCount', counts.country);
+      populateList('cityCount', counts.city);
+      populateList('venueCount', counts.venue);
+      populateList('artistCount', counts.artist, 10);
     }
 
     loadSummary();
