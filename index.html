@@ -2,46 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gig Graph Column Totals</title>
+  <title>Gig Graph Column Tallies</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { color: #333; }
+    h2 { margin-top: 20px; }
     ul { list-style-type: none; padding-left: 0; }
-    li { padding: 5px 0; font-size: 1em; }
+    li { padding: 2px 0; font-size: 1em; }
   </style>
 </head>
 <body>
-  <h1>Gig Graph Summary</h1>
-  <p>Total entries per column:</p>
-  <ul id="columnTotals"></ul>
+  <h1>Gig Graph Column Tallies</h1>
+  <div id="tallies"></div>
 
   <script>
-    async function loadTotals() {
+    async function loadTallies() {
       const res = await fetch('data.json');
       const data = await res.json();
+      const container = document.getElementById('tallies');
+      container.innerHTML = '';
 
       if(data.length === 0){
-        document.getElementById('columnTotals').innerHTML = "<li>No data available</li>";
+        container.innerHTML = "<p>No data available</p>";
         return;
       }
 
       const columns = Object.keys(data[0]);
-      const totals = {};
 
       columns.forEach(col => {
-        totals[col] = data.filter(row => row[col] !== null && row[col] !== '').length;
-      });
+        const counts = {};
+        data.forEach(row => {
+          const val = row[col] || 'N/A';
+          counts[val] = (counts[val] || 0) + 1;
+        });
 
-      const ul = document.getElementById('columnTotals');
-      ul.innerHTML = '';
-      columns.forEach(col => {
-        const li = document.createElement('li');
-        li.textContent = `${col}: ${totals[col]}`;
-        ul.appendChild(li);
+        // Create section for this column
+        const h2 = document.createElement('h2');
+        h2.textContent = col;
+        container.appendChild(h2);
+
+        const ul = document.createElement('ul');
+        Object.entries(counts)
+          .sort((a,b) => b[1]-a[1]) // sort descending by count
+          .forEach(([val,count]) => {
+            const li = document.createElement('li');
+            li.textContent = `${val}: ${count}`;
+            ul.appendChild(li);
+          });
+
+        container.appendChild(ul);
       });
     }
 
-    loadTotals();
+    loadTallies();
   </script>
 </body>
 </html>
