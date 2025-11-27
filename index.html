@@ -42,15 +42,18 @@
       // Display totals
       document.getElementById('totalConcerts').textContent = json.summary.total_concerts;
       document.getElementById('totalMusicians').textContent = json.summary.total_musicians;
-
+      
       // --- Concerts per Year ---
-      const yearCounts = {};
-      json.rows.forEach(row => {
-        if(row.Date){
-          const year = new Date(row.Date).getFullYear();
-          yearCounts[year] = (yearCounts[year] || 0) + 1;
-        }
-      });
+     const yearCounts = {};
+json.rows.forEach(row => {
+  if(row.Date){ // only process rows with a non-empty Date
+    const date = new Date(row.Date);
+    if(!isNaN(date)){ // skip invalid dates
+      const year = date.getFullYear();
+      yearCounts[year] = (yearCounts[year] || 0) + 1;
+    }
+  }
+});
       const yearLabels = Object.keys(yearCounts).sort();
       const yearData = yearLabels.map(y => yearCounts[y]);
 
