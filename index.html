@@ -2,87 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gig Graph Dashboard</title>
+  <title>Gig Graph Dashboard - Summary</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { color: #333; }
-    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
-    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-    th { background-color: #f2f2f2; cursor: pointer; }
-    tr:hover { background-color: #f9f9f9; }
-    label { font-weight: bold; margin-right: 5px; }
-    select { padding: 5px; }
+    ul { list-style-type: none; padding-left: 0; }
+    li { padding: 5px 0; font-size: 1.1em; }
   </style>
 </head>
 <body>
-  <h1>Gig Graph</h1>
-  <p>Automatically updated data from private sources.</p>
+  <h1>Gig Graph Summary</h1>
+  <p>Automatically updated totals per year:</p>
 
-  <label for="yearFilter">Filter by Year:</label>
-  <select id="yearFilter">
-    <option value="all">All</option>
-  </select>
-
-  <table id="dataTable">
-    <thead></thead>
-    <tbody></tbody>
-  </table>
+  <ul id="summaryList"></ul>
 
   <script>
-    async function loadData() {
+    async function loadSummary() {
       const res = await fetch('data.json');
       const data = await res.json();
 
       if(data.length === 0){
-        document.getElementById('dataTable').innerHTML = "<tr><td>No data available</td></tr>";
+        document.getElementById('summaryList').innerHTML = "<li>No data available</li>";
         return;
       }
 
-      const firstColumn = Object.keys(data[0])[0]; // Date column
+      const firstColumn = Object.keys(data[0])[0]; // assume first column is date/year
+      const counts = {};
 
-      // Populate year filter (extract year from date)
-      const years = [...new Set(data.map(d => new Date(d[firstColumn]).getFullYear()))].sort((a,b)=>b-a);
-      const filter = document.getElementById('yearFilter');
-      years.forEach(y => {
-        const opt = document.createElement('option');
-        opt.value = y;
-        opt.textContent = y;
-        filter.appendChild(opt);
+      data.forEach(row => {
+        const year = new Date(row[firstColumn]).getFullYear();
+        counts[year] = (counts[year] || 0) + 1;
       });
 
-      function renderTable(year) {
-        const table = document.getElementById('dataTable');
-        const tbody = table.querySelector('tbody');
-        const thead = table.querySelector('thead');
+      // Sort years descending
+      const sortedYears = Object.keys(counts).sort((a,b)=>b-a);
 
-        tbody.innerHTML = '';
-        thead.innerHTML = '';
-
-        const columns = Object.keys(data[0]);
-        thead.innerHTML = '<tr>' + columns.map(c=>`<th>${c}</th>`).join('') + '</tr>';
-
-        let rows = data;
-        if(year && year!=='all') {
-          rows = rows.filter(r => new Date(r[firstColumn]).getFullYear() == year);
-        }
-
-        rows.forEach(r=>{
-          const tr = document.createElement('tr');
-          tr.innerHTML = columns.map(c=>`<td>${r[c]}</td>`).join('');
-          tbody.appendChild(tr);
-        });
-
-        if(rows.length === 0){
-          tbody.innerHTML = `<tr><td colspan="${columns.length}">No data for ${year}</td></tr>`;
-        }
-      }
-
-      filter.addEventListener('change', ()=>renderTable(filter.value));
-
-      renderTable('all');
+      const ul = document.getElementById('summaryList');
+      ul.innerHTML = '';
+      sortedYears.forEach(y => {
+        const li = document.createElement('li');
+        li.textContent = `${y}: ${counts[y]} entries`;
+        ul.appendChild(li);
+      });
     }
 
-    loadData();
+    loadSummary();
   </script>
 </body>
 </html>
