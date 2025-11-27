@@ -1,7 +1,7 @@
 {
   "summary": {
-    "total_concerts": 305,
-    "total_musicians": 265
+    "total_concerts": 368,
+    "total_musicians": 307
   },
   "rows": [
     {
@@ -572,6 +572,24 @@
       "Setlist": "https://www.setlist.fm/setlist/the-hives/2021/kulturbolaget-malmo-sweden-438d2fb3.html"
     },
     {
+      "Date": "24-2-22",
+      "Artist": "Girls In Airports",
+      "Festival": "",
+      "Venue": "",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "8-3-22",
+      "Artist": "Kvelertak",
+      "Festival": "",
+      "Venue": "Kulturbolaget",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
       "Date": "23-4-22",
       "Artist": "Tool",
       "Festival": "",
@@ -579,6 +597,519 @@
       "City": "Copenhagen",
       "Country": "Denmark",
       "Setlist": "https://www.setlist.fm/setlist/tool/2022/royal-arena-copenhagen-denmark-7bb6126c.html"
+    },
+    {
+      "Date": "27-4-22",
+      "Artist": "Hans Zimmer",
+      "Festival": "",
+      "Venue": "Royal Arena",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-5-22",
+      "Artist": "Uncle Acid & the Deadbeats",
+      "Festival": "",
+      "Venue": "",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-5-22",
+      "Artist": "Ghost",
+      "Festival": "",
+      "Venue": "",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "Wargasm",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "Vola",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "Suicidal Tendencies",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "LLNN",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "Red Fang",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "Dizzy Mizz Lizzy",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-6-22",
+      "Artist": "Metallica",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-6-22",
+      "Artist": "Konvent",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-6-22",
+      "Artist": "Knocked Loose",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-6-22",
+      "Artist": "KORN",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-6-22",
+      "Artist": "Judas Priest",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-6-22",
+      "Artist": "KISS",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-6-22",
+      "Artist": "Devin Townsend",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "17-6-22",
+      "Artist": "Bad Religion",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "17-6-22",
+      "Artist": "Alestorm",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "17-6-22",
+      "Artist": "BAEST",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
+      "Date": "21-6-22",
+      "Artist": "Bokassa",
+      "Festival": "",
+      "Venue": "Kulturbolaget",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "21-6-22",
+      "Artist": "Baroness",
+      "Festival": "",
+      "Venue": "Kulturbolaget",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "21-6-22",
+      "Artist": "Mastodon",
+      "Festival": "",
+      "Venue": "Kulturbolaget",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "29-6-22",
+      "Artist": "The Ocean Collective",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "29-6-22",
+      "Artist": "Employed To Serve",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "29-6-22",
+      "Artist": "Post Malone",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "29-6-22",
+      "Artist": "Turnstile",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "29-6-22",
+      "Artist": "Biffy Clyro",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "30-6-22",
+      "Artist": "Dua Lipa",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "30-6-22",
+      "Artist": "Phoebe Bridgers",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "30-6-22",
+      "Artist": "The Blaze",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-7-22",
+      "Artist": "Mitski",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-7-22",
+      "Artist": "Snail Mail",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-7-22",
+      "Artist": "The Smile",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-7-22",
+      "Artist": "Tyler, The Creator",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-7-22",
+      "Artist": "Jerry Cantrell",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "1-7-22",
+      "Artist": "Chvrches",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "St Vincent",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "HAIM",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "Idles",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "Converge",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "Chelsea Wolfe",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "The Strokes",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "2-7-22",
+      "Artist": "Surfbort",
+      "Festival": "Roskilde",
+      "Venue": "Dyrskuepladsen",
+      "City": "Roskilde",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "5-7-22",
+      "Artist": "Idles",
+      "Festival": "",
+      "Venue": "Royal Arena",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "5-7-22",
+      "Artist": "Pearl Jam",
+      "Festival": "",
+      "Venue": "Royal Arena",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "8-7-22",
+      "Artist": "Pixies",
+      "Festival": "BST",
+      "Venue": "Hyde Park",
+      "City": "London",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "8-7-22",
+      "Artist": "Pearl Jam",
+      "Festival": "BST",
+      "Venue": "Hyde Park",
+      "City": "London",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-7-22",
+      "Artist": "Employed To Serve",
+      "Festival": "",
+      "Venue": "KB Hallen",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-7-22",
+      "Artist": "Alien Weaponry",
+      "Festival": "",
+      "Venue": "KB Hallen",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "16-7-22",
+      "Artist": "Gojira",
+      "Festival": "",
+      "Venue": "KB Hallen",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-8-22",
+      "Artist": "Jinjer",
+      "Festival": "",
+      "Venue": "",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "15-8-22",
+      "Artist": "Slipknot",
+      "Festival": "",
+      "Venue": "",
+      "City": "Malmo",
+      "Country": "Sweden",
+      "Setlist": ""
+    },
+    {
+      "Date": "22-8-22",
+      "Artist": "Tame Impala",
+      "Festival": "",
+      "Venue": "Royal Arena",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "10-9-22",
+      "Artist": "LLNN",
+      "Festival": "",
+      "Venue": "Pumphuset",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "10-9-22",
+      "Artist": "The Ocean Collective",
+      "Festival": "",
+      "Venue": "Pumphuset",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "17-9-22",
+      "Artist": "Deafheaven",
+      "Festival": "",
+      "Venue": "Pumphuset",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "29-9-22",
+      "Artist": "De Staat",
+      "Festival": "",
+      "Venue": "Den Gra Hal",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
     },
     {
       "Date": "29-9-22",
@@ -599,6 +1130,33 @@
       "Setlist": "https://www.setlist.fm/setlist/placebo/2022/store-vega-copenhagen-denmark-63b1c2bf.html"
     },
     {
+      "Date": "14-10-22",
+      "Artist": "The Cure",
+      "Festival": "",
+      "Venue": "Royal Arena",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "22-10-22",
+      "Artist": "Sigur Ros",
+      "Festival": "",
+      "Venue": "KB Hallen",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
+      "Date": "5-11-22",
+      "Artist": "Alt-J",
+      "Festival": "",
+      "Venue": "KB Hallen",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
+    },
+    {
       "Date": "6-11-22",
       "Artist": "Frank Carter & Rattlesnakes",
       "Festival": "",
@@ -615,6 +1173,15 @@
       "City": "Copenhagen",
       "Country": "Denmark",
       "Setlist": "https://www.setlist.fm/setlist/wolf-alice/2022/store-vega-copenhagen-denmark-3bbe605c.html"
+    },
+    {
+      "Date": "28-11-22",
+      "Artist": "Clipping",
+      "Festival": "",
+      "Venue": "Loppen",
+      "City": "Copenhagen",
+      "Country": "Denmark",
+      "Setlist": ""
     },
     {
       "Date": "28-1-23",
@@ -1202,7 +1769,7 @@
       "Setlist": "https://www.setlist.fm/setlist/puscifer/2023/store-vega-copenhagen-denmark-7ba60aac.html"
     },
     {
-      "Date": "",
+      "Date": "27-6-23",
       "Artist": "Jehnny Beth",
       "Festival": "",
       "Venue": "Parken",
@@ -1211,7 +1778,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "27-6-23",
       "Artist": "Depeche Mode",
       "Festival": "",
       "Venue": "Parken",
@@ -1220,7 +1787,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-6-23",
       "Artist": "Scowl",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1229,7 +1796,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-6-23",
       "Artist": "Fever Ray",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1238,7 +1805,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-6-23",
       "Artist": "Chat Pile",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1247,7 +1814,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-6-23",
       "Artist": "Lorna Shore",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1256,7 +1823,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-6-23",
       "Artist": "Kendrick Lamar",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1265,7 +1832,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-6-23",
       "Artist": "Queens Of The Stone Age",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1274,7 +1841,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "29-6-23",
       "Artist": "Tove Lo",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1283,7 +1850,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "29-6-23",
       "Artist": "Rina Sawayama",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1292,7 +1859,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "29-6-23",
       "Artist": "Lil Nas X",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1301,7 +1868,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "29-6-23",
       "Artist": "Hudson Mohawke",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1310,7 +1877,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Body Type",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1319,7 +1886,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Japanese Breakfast",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1328,7 +1895,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Code Orange",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1337,7 +1904,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Baby Volcano",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1346,7 +1913,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Alice Glass",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1355,7 +1922,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Blur",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1364,7 +1931,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Rosalia",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1373,7 +1940,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-6-23",
       "Artist": "Christine and the Queens",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1382,7 +1949,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "8-7-23",
       "Artist": "Florence and the Machine",
       "Festival": "South Ocean",
       "Venue": "",
@@ -1391,7 +1958,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "11-7-23",
       "Artist": "Bruce Springsteen",
       "Festival": "",
       "Venue": "Parken",
@@ -1400,7 +1967,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "10-8-23",
       "Artist": 68,
       "Festival": "",
       "Venue": "",
@@ -1409,7 +1976,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "11-8-23",
       "Artist": "Rick Astley",
       "Festival": "",
       "Venue": "Tivoli",
@@ -1427,7 +1994,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "10-9-23",
       "Artist": "Full Of Hell",
       "Festival": "",
       "Venue": "",
@@ -1436,7 +2003,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "11-9-23",
       "Artist": "Kali Malone",
       "Festival": "",
       "Venue": "",
@@ -1445,7 +2012,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "11-9-23",
       "Artist": "Sunn O)))",
       "Festival": "",
       "Venue": "",
@@ -1454,7 +2021,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "12-9-23",
       "Artist": "The Story So Far",
       "Festival": "",
       "Venue": "Royal Arena",
@@ -1463,7 +2030,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "12-9-23",
       "Artist": "Blink-182",
       "Festival": "",
       "Venue": "Royal Arena",
@@ -1472,7 +2039,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "17-10-23",
       "Artist": "Weeping Icon",
       "Festival": "",
       "Venue": "",
@@ -1481,7 +2048,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "17-10-23",
       "Artist": "Maggot Heart",
       "Festival": "",
       "Venue": "",
@@ -1490,7 +2057,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "17-10-23",
       "Artist": "Messa",
       "Festival": "",
       "Venue": "",
@@ -1499,7 +2066,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "25-10-23",
       "Artist": "Madonna",
       "Festival": "",
       "Venue": "Royal Arena",
@@ -1508,7 +2075,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "27-10-23",
       "Artist": "PJ Harvey",
       "Festival": "",
       "Venue": "",
@@ -1517,7 +2084,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "29-10-23",
       "Artist": "Frank Turner",
       "Festival": "",
       "Venue": "Vega",
@@ -1526,7 +2093,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "13-11-23",
       "Artist": "Lorna Shore",
       "Festival": "",
       "Venue": "Amager Bio",
@@ -1535,7 +2102,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "14-11-23",
       "Artist": "Ho99o9",
       "Festival": "",
       "Venue": "Store Vega",
@@ -1544,7 +2111,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "14-11-23",
       "Artist": "Carpenter Brut",
       "Festival": "",
       "Venue": "Store Vega",
@@ -1553,7 +2120,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "14-11-23",
       "Artist": "Pertubator",
       "Festival": "",
       "Venue": "Store Vega",
@@ -1562,7 +2129,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "2-12-23",
       "Artist": "Madonna",
       "Festival": "",
       "Venue": "",
@@ -1571,7 +2138,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "16-12-2023",
       "Artist": "Don Broco",
       "Festival": "",
       "Venue": "O2 Academy",
@@ -1976,7 +2543,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-24",
       "Artist": "Better Lovers",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1985,7 +2552,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-24",
       "Artist": "Frank Carter & Rattlesnakes",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -1994,7 +2561,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-24",
       "Artist": "Ragana",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2003,7 +2570,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-24",
       "Artist": "Doja Cat",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2012,7 +2579,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-24",
       "Artist": "Heilung",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2021,7 +2588,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-24",
       "Artist": "Jungle",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2030,7 +2597,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "While She Sleeps",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2039,7 +2606,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "Belle & Sebastian",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2048,7 +2615,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "Ice Spice",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2057,7 +2624,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "Deena Abdelwahed",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2066,7 +2633,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "Noname",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2075,7 +2642,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "The Beaches",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2084,7 +2651,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-24",
       "Artist": "21 Savage",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2093,7 +2660,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Aurora",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2102,7 +2669,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Kim Gordon",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2111,7 +2678,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Sexy Red",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2120,7 +2687,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Otoboke Beaver",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2129,7 +2696,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Foo Fighters",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2138,7 +2705,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Julie Christmas",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2147,7 +2714,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-24",
       "Artist": "Kvelertak",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2156,7 +2723,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "8-8-24",
       "Artist": "AV AV AV",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2165,7 +2732,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "8-8-24",
       "Artist": "Fred Again",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2174,7 +2741,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "10-8-24",
       "Artist": "Viagra Boys",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2183,7 +2750,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "10-8-24",
       "Artist": "Air",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2192,7 +2759,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "10-8-24",
       "Artist": "Jack White",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2201,7 +2768,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-8-24",
       "Artist": "NYOS",
       "Festival": "",
       "Venue": "Amager Bio",
@@ -2210,7 +2777,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-8-24",
       "Artist": "Zeal and Ardor",
       "Festival": "",
       "Venue": "Amager Bio",
@@ -2219,7 +2786,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-11-24",
       "Artist": "Bilmuri",
       "Festival": "",
       "Venue": "",
@@ -2228,7 +2795,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "30-11-24",
       "Artist": "Sleep Token",
       "Festival": "",
       "Venue": "",
@@ -2237,7 +2804,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-12-24",
       "Artist": "Sigur Ros",
       "Festival": "",
       "Venue": "",
@@ -2246,7 +2813,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "7-2-25",
       "Artist": "Mogwai",
       "Festival": "",
       "Venue": "Store Vega",
@@ -2255,7 +2822,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "12-2-25",
       "Artist": "Brat",
       "Festival": "",
       "Venue": "Plan B",
@@ -2264,7 +2831,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "12-2-25",
       "Artist": "Full Of Hell",
       "Festival": "",
       "Venue": "Plan B",
@@ -2273,7 +2840,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "12-2-25",
       "Artist": "Crowbar",
       "Festival": "",
       "Venue": "Plan B",
@@ -2282,7 +2849,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "12-2-25",
       "Artist": "Napalm Death",
       "Festival": "",
       "Venue": "Plan B",
@@ -2291,7 +2858,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "28-2-25",
       "Artist": "Animals As Leaders",
       "Festival": "",
       "Venue": "Amager Bio",
@@ -2300,7 +2867,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "16-3-25",
       "Artist": "Heilung",
       "Festival": "",
       "Venue": "Forum",
@@ -2309,7 +2876,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "18-3-25",
       "Artist": "Godspeed You! Black Emperor",
       "Festival": "",
       "Venue": "Store Vega",
@@ -2318,7 +2885,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "24-4-25",
       "Artist": "Blood Incantation",
       "Festival": "",
       "Venue": "Amager Bio",
@@ -2327,7 +2894,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "29-4-25",
       "Artist": "Billie Eilish",
       "Festival": "",
       "Venue": "Royal Arena",
@@ -2336,7 +2903,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "8-6-25",
       "Artist": "Flaming Lips",
       "Festival": "",
       "Venue": "Store Vega",
@@ -2345,7 +2912,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "18-6-25",
       "Artist": "Battlesnake",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2354,7 +2921,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "18-6-25",
       "Artist": "Within Temptation",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2363,7 +2930,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "18-6-25",
       "Artist": "Poppy",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2372,7 +2939,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "18-6-25",
       "Artist": "Dizzy Mizz Lizzy",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2381,7 +2948,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "18-6-25",
       "Artist": "Julie Christmas",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2390,7 +2957,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "19-6-25",
       "Artist": "Robbie Williams",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2399,7 +2966,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "19-6-25",
       "Artist": "Aqua",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2408,7 +2975,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Fleshwater",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2417,7 +2984,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Heaven Shall Burn",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2426,7 +2993,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Alien Ant Farm",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2435,7 +3002,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Powerwolf",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2444,7 +3011,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "In Flames",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2453,7 +3020,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Anaal Nathrakh",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2462,7 +3029,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Slipknot",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2471,7 +3038,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Blood Incantation",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2480,7 +3047,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "21-6-25",
       "Artist": "Health",
       "Festival": "Copenhell",
       "Venue": "Refshale\u00f8en",
@@ -2489,7 +3056,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "22-6-25",
       "Artist": "Weezer",
       "Festival": "",
       "Venue": "Store Vega",
@@ -2498,7 +3065,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "26-6-25",
       "Artist": "Deafheaven",
       "Festival": "",
       "Venue": "Pumphuset",
@@ -2507,7 +3074,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "2-7-25",
       "Artist": "Jinjer",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2516,7 +3083,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "2-7-25",
       "Artist": "Fontaines DC",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2525,7 +3092,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "2-7-25",
       "Artist": "Charli XCX",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2534,7 +3101,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "2-7-25",
       "Artist": "Deftones",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2543,7 +3110,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-25",
       "Artist": "Beth Gibbons",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2552,7 +3119,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-25",
       "Artist": "FKA Twigs",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2561,7 +3128,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-25",
       "Artist": "Bright Eyes",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2570,7 +3137,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-7-25",
       "Artist": "Knocked Loose",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2579,7 +3146,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-25",
       "Artist": "Electric Callboy",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2588,7 +3155,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-25",
       "Artist": "Doechii",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2597,7 +3164,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-25",
       "Artist": "Magdalena Bay",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2606,7 +3173,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-25",
       "Artist": "M\u00d8",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2615,7 +3182,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "4-7-25",
       "Artist": "Olivia Rodrgio",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2624,7 +3191,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-25",
       "Artist": "Lucy Dacus",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2633,7 +3200,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-25",
       "Artist": "Lola Young",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2642,7 +3209,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "5-7-25",
       "Artist": "Nine Inch Nails",
       "Festival": "Roskilde",
       "Venue": "Dyrskuepladsen",
@@ -2651,7 +3218,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "7-8-25",
       "Artist": "mk.gee",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2660,7 +3227,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "7-8-25",
       "Artist": "Chappell Roan",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2669,7 +3236,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "9-8-25",
       "Artist": "Sleaford Mods",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2678,7 +3245,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "9-8-25",
       "Artist": "Bikini Kill",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2687,7 +3254,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "9-8-25",
       "Artist": "Queens Of The Stone Age",
       "Festival": "Syd For Solen",
       "Venue": "",
@@ -2696,7 +3263,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "19-8-25",
       "Artist": "Myrkur",
       "Festival": "",
       "Venue": "Store Vega",
@@ -2705,7 +3272,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "19-8-25",
       "Artist": "Smashing Pumpkins",
       "Festival": "",
       "Venue": "Store Vega",
@@ -2714,7 +3281,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-10-25",
       "Artist": 68,
       "Festival": "",
       "Venue": "Pumphuset",
@@ -2723,7 +3290,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "3-10-25",
       "Artist": "Better Lovers",
       "Festival": "",
       "Venue": "Pumphuset",
@@ -2732,7 +3299,7 @@
       "Setlist": ""
     },
     {
-      "Date": "",
+      "Date": "14-11-25",
       "Artist": "King Gizzard & Lizard Wizard",
       "Festival": "",
       "Venue": "Poolen",
