@@ -2,73 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gig Graph Summary</title>
+  <title>Gig Graph Column Totals</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { color: #333; }
-    h2 { margin-top: 20px; }
     ul { list-style-type: none; padding-left: 0; }
-    li { padding: 3px 0; font-size: 1em; }
+    li { padding: 5px 0; font-size: 1em; }
   </style>
 </head>
 <body>
   <h1>Gig Graph Summary</h1>
-  <p>Automatically updated statistics:</p>
-
-  <h2>Total entries</h2>
-  <p id="totalCount"></p>
-
-  <h2>Tally per Year</h2>
-  <ul id="yearCount"></ul>
-
-  <h2>Tally per City</h2>
-  <ul id="cityCount"></ul>
-
-  <h2>Tally per Country</h2>
-  <ul id="countryCount"></ul>
+  <p>Total entries per column:</p>
+  <ul id="columnTotals"></ul>
 
   <script>
-    async function loadSummary() {
+    async function loadTotals() {
       const res = await fetch('data.json');
       const data = await res.json();
 
       if(data.length === 0){
-        document.getElementById('totalCount').textContent = "No data available";
-        ['yearCount','cityCount','countryCount'].forEach(id => {
-          document.getElementById(id).innerHTML = "<li>No data available</li>";
-        });
+        document.getElementById('columnTotals').innerHTML = "<li>No data available</li>";
         return;
       }
 
-      const firstCol = Object.keys(data[0])[0]; // assume first column is Date
-      document.getElementById('totalCount').textContent = data.length;
+      const columns = Object.keys(data[0]);
+      const totals = {};
 
-      // Tally per year
-      const yearCounts = {};
-      data.forEach(r => {
-        const year = new Date(r[firstCol]).getFullYear();
-        yearCounts[year] = (yearCounts[year] || 0) + 1;
+      columns.forEach(col => {
+        totals[col] = data.filter(row => row[col] !== null && row[col] !== '').length;
       });
-      const yearUl = document.getElementById('yearCount');
-      yearUl.innerHTML = '';
-      Object.entries(yearCounts).sort((a,b)=>b[0]-a[0]).forEach(([y,v])=>{
+
+      const ul = document.getElementById('columnTotals');
+      ul.innerHTML = '';
+      columns.forEach(col => {
         const li = document.createElement('li');
-        li.textContent = `${y}: ${v}`;
-        yearUl.appendChild(li);
+        li.textContent = `${col}: ${totals[col]}`;
+        ul.appendChild(li);
       });
+    }
 
-      // Tally per city
-      const cityCounts = {};
-      data.forEach(r => { if(r.City) cityCounts[r.City] = (cityCounts[r.City]||0)+1; });
-      const cityUl = document.getElementById('cityCount');
-      cityUl.innerHTML = '';
-      Object.entries(cityCounts).sort((a,b)=>b[1]-a[1]).forEach(([k,v])=>{
-        const li = document.createElement('li');
-        li.textContent = `${k}: ${v}`;
-        cityUl.appendChild(li);
-      });
-
-      // Tally per country
-      const countryCounts = {};
-      data.forEach(r => { if(r.Country) countryCounts[r.Country] = (countryCounts[r.Country]||0)+1; });
-      const country
+    loadTotals();
+  </script>
+</body>
+</html>
