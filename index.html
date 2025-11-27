@@ -35,6 +35,16 @@
   </div>
 
   <script>
+    function parseYear(dateStr) {
+      if (!dateStr) return null;
+      const parts = dateStr.split("-");
+      if (parts.length !== 3) return null;
+      let [day, month, yy] = parts.map(p => parseInt(p, 10));
+      if (isNaN(day) || isNaN(month) || isNaN(yy)) return null;
+      if (yy < 100) yy += 2000; // convert 2-digit year
+      return yy;
+    }
+
     async function loadDashboard() {
       const res = await fetch('data.json');
       const json = await res.json();
@@ -42,29 +52,15 @@
       // Display totals
       document.getElementById('totalConcerts').textContent = json.summary.total_concerts;
       document.getElementById('totalMusicians').textContent = json.summary.total_musicians;
-      
+
       // --- Concerts per Year ---
       const yearCounts = {};
       json.rows.forEach(row => {
-        const dateStr = row.Date;
-        if(!dateStr) return; // skip empty
-        let year = null;
-
-        if(typeof dateStr === 'number') {
-          year = dateStr;
-        } else if(typeof dateStr === 'string') {
-          const d = new Date(dateStr);
-          if(!isNaN(d)) {
-            year = d.getFullYear();
-          } else {
-            const match = dateStr.match(/\b(\d{4})\b/);
-            if(match) year = parseInt(match[1]);
-          }
+        const year = parseYear(row.Date);
+        if (year) {
+          yearCounts[year] = (yearCounts[year] || 0) + 1;
         }
-
-        if(year) yearCounts[year] = (yearCounts[year] || 0) + 1;
       });
-
       const yearLabels = Object.keys(yearCounts).sort();
       const yearData = yearLabels.map(y => yearCounts[y]);
 
@@ -112,8 +108,9 @@
       // --- Top 10 Most Seen Artists ---
       const artistCounts = {};
       json.rows.forEach(row => {
-        if(row.Artist && row.Artist !== 'N/A'){
-          artistCounts[row.Artist] = (artistCounts[row.Artist] || 0) + 1;
+        const artist = row.Artist ? String(row.Artist) : null;
+        if (artist && artist !== 'N/A') {
+          artistCounts[artist] = (artistCounts[artist] || 0) + 1;
         }
       });
       const topArtists = Object.entries(artistCounts)
