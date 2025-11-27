@@ -2,90 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Gig Graph Dashboard - Summary</title>
+  <title>Gig Graph Smart Chatbot</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; }
     h1 { color: #333; }
-    h2 { margin-top: 20px; }
-    ul { list-style-type: none; padding-left: 0; }
-    li { padding: 3px 0; font-size: 1em; }
+    #chat { border: 1px solid #ddd; padding: 10px; height: 350px; overflow-y: auto; margin-bottom: 10px; background: #fafafa; }
+    .user { color: blue; margin: 5px 0; }
+    .bot { color: green; margin: 5px 0; white-space: pre-wrap; }
+    input { padding: 5px; width: 60%; }
+    button { padding: 5px 10px; }
   </style>
 </head>
 <body>
-  <h1>Gig Graph Summary Dashboard</h1>
-  <p>Automatically updated statistics:</p>
+  <h1>Gig Graph Smart Chatbot</h1>
+  <p>Ask questions about your gig data:</p>
 
-  <h2>Number of entries per year</h2>
-  <ul id="yearCount"></ul>
-
-  <h2>Tally per Country</h2>
-  <ul id="countryCount"></ul>
-
-  <h2>Tally per City</h2>
-  <ul id="cityCount"></ul>
-
-  <h2>Tally per Venue</h2>
-  <ul id="venueCount"></ul>
-
-  <h2>Top 10 Artists</h2>
-  <ul id="artistCount"></ul>
+  <div id="chat"></div>
+  <input type="text" id="queryInput" placeholder="E.g., Top artist in 2023" />
+  <button id="queryBtn">Ask</button>
 
   <script>
-    async function loadSummary() {
-      const res = await fetch('data.json');
-      const data = await res.json();
+    let data = [];
+    const chat = document.getElementById('chat');
 
-      if(data.length === 0){
-        const lists = ['yearCount','countryCount','cityCount','venueCount','artistCount'];
-        lists.forEach(id => document.getElementById(id).innerHTML = "<li>No data available</li>");
-        return;
-      }
+    // Load data.json
+    fetch('data.json')
+      .then(res => res.json())
+      .then(d => { data = d; });
 
-      const firstColumn = Object.keys(data[0])[0]; // Date column
-      const counts = {
-        year: {},
-        country: {},
-        city: {},
-        venue: {},
-        artist: {}
-      };
-
-      data.forEach(row => {
-        // Year
-        const year = new Date(row[firstColumn]).getFullYear();
-        counts.year[year] = (counts.year[year] || 0) + 1;
-
-        // Country
-        if(row.Country) counts.country[row.Country] = (counts.country[row.Country] || 0) + 1;
-        // City
-        if(row.City) counts.city[row.City] = (counts.city[row.City] || 0) + 1;
-        // Venue
-        if(row.Venue) counts.venue[row.Venue] = (counts.venue[row.Venue] || 0) + 1;
-        // Artist
-        if(row.Artist) counts.artist[row.Artist] = (counts.artist[row.Artist] || 0) + 1;
-      });
-
-      function populateList(id, obj, topN=null){
-        const ul = document.getElementById(id);
-        ul.innerHTML = '';
-        let entries = Object.entries(obj);
-        if(topN) entries = entries.sort((a,b)=>b[1]-a[1]).slice(0,topN);
-        else entries = entries.sort((a,b)=>b[1]-a[1]);
-        entries.forEach(([k,v])=>{
-          const li = document.createElement('li');
-          li.textContent = `${k}: ${v}`;
-          ul.appendChild(li);
-        });
-      }
-
-      populateList('yearCount', counts.year);
-      populateList('countryCount', counts.country);
-      populateList('cityCount', counts.city);
-      populateList('venueCount', counts.venue);
-      populateList('artistCount', counts.artist, 10);
+    function appendMessage(sender, msg){
+      const div = document.createElement('div');
+      div.className = sender;
+      div.textContent = msg;
+      chat.appendChild(div);
+      chat.scrollTop = chat.scrollHeight;
     }
 
-    loadSummary();
+    function getYearFromQuery(q){
+      const match = q.match(/\b\d{4}\b/);
+      return match ? parseInt(match[0]) : null;
+    }
+
+    function handleQuery(q){
+      q = q.toLowerCase();
+      if(data.length === 0) return "No data available yet.";
+
+      const firstCol = Object.keys(data[0])[0]; // date column
+      const year = getYearFromQuery(q);
+      const results = [];
+
+      // Gigs in a year
+      if(q.includes("gigs") && year){
+        const count = data.filter(r => new Date(r[firstCol]).getFullYear() === year).length;
+        results.push(`Number of gigs in ${year}: ${count}`);
+      }
+
+      // Gigs in country
+      if(q.includes("country")){
+        const counts = {};
+        data.forEach(r => { if(r.Country) counts[r.Country] = (counts[r.Country]||0)+1; });
+        results.push("Entries per country:\n" + Object.entries(counts).map(([k,v])=>`${k}: ${v}`).join("\n"));
+      }
+
+      // Gigs in city
+      if(q.includes("city") || q.includes("in ")) {
+        const counts = {};
+        data.forEach(r => { if(r.City) counts[r.City] = (counts[r.City]||0)+1; });
+        if(year) { // filter by year
+          for(const k in counts) counts[k] = data.filter(r => new Date(r[firstCol]).getFullYear()===year && r.City===k).length;
+        }
+        results.push("Entries per city:\n" + Object.entries(counts).map(([k,v])=>`${k}: ${v}`).join("\n"));
+      }
+
+      // Gigs per venue
+      if(q.includes("venue")){
+        const counts = {};
+        data.forEach(r => { if(r.Venue) counts[r.Venue] = (counts[r.Venue]||0)+1; });
+        if(year){
+          for(const k in counts) counts[k] = data.filter(r => new Date(r[firstCol]).getFullYear()===year && r.Venue===k).length;
+        }
+        results.push("Entries per venue:\n" + Object.entries(counts).map(([k,v])=>`${k}: ${v}`).join("\n"));
+      }
+
+      // Top artists
+      if(q.includes("artist") || q.includes("top artist")){
+        const counts = {};
+        data.forEach(r => { if(r.Artist) counts[r.Artist] = (counts[r.Artist]||0)+1; });
+        if(year){
+          for(const k in counts) counts[k] = data.filter(r => new Date(r[firstCol]).getFullYear()===year && r.Artist===k).length;
+        }
+        const top = Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10)
+                         .map(([k,v])=>`${k}: ${v}`);
+        results.push("Top 10 artists:\n" + top.join("\n"));
+      }
+
+      if(results.length===0) return "Sorry, I couldn't understand your question. Try asking about year, country, city, venue, or top artists.";
+      return results.join("\n\n");
+    }
+
+    document.getElementById('queryBtn').addEventListener('click', ()=>{
+      const q = document.getElementById('queryInput').value;
+      if(!q) return;
+      appendMessage('user', `You: ${q}`);
+      const ans = handleQuery(q);
+      appendMessage('bot', `Bot: ${ans}`);
+      document.getElementById('queryInput').value = '';
+    });
   </script>
 </body>
 </html>
