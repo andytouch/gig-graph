@@ -44,16 +44,27 @@
       document.getElementById('totalMusicians').textContent = json.summary.total_musicians;
       
       // --- Concerts per Year ---
-     const yearCounts = {};
-json.rows.forEach(row => {
-  if(row.Date){ // only process rows with a non-empty Date
-    const date = new Date(row.Date);
-    
-      const year = date.getFullYear();
-      yearCounts[year] = (yearCounts[year] || 0) + 1;
-    
-  }
-});
+      const yearCounts = {};
+      json.rows.forEach(row => {
+        const dateStr = row.Date;
+        if(!dateStr) return; // skip empty
+        let year = null;
+
+        if(typeof dateStr === 'number') {
+          year = dateStr;
+        } else if(typeof dateStr === 'string') {
+          const d = new Date(dateStr);
+          if(!isNaN(d)) {
+            year = d.getFullYear();
+          } else {
+            const match = dateStr.match(/\b(\d{4})\b/);
+            if(match) year = parseInt(match[1]);
+          }
+        }
+
+        if(year) yearCounts[year] = (yearCounts[year] || 0) + 1;
+      });
+
       const yearLabels = Object.keys(yearCounts).sort();
       const yearData = yearLabels.map(y => yearCounts[y]);
 
