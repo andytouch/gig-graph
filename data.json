@@ -1,6 +1,6 @@
 {
   "summary": {
-    "total_concerts": 536,
+    "total_concerts": 535,
     "total_musicians": 408
   },
   "rows": [
@@ -704,15 +704,6 @@
       "Venue": "O2 Academy",
       "City": "Bournemouth",
       "Country": "England",
-      "Setlist": ""
-    },
-    {
-      "Date": "",
-      "Artist": "",
-      "Festival": "",
-      "Venue": "",
-      "City": "",
-      "Country": "",
       "Setlist": ""
     },
     {
