@@ -1,7 +1,7 @@
 {
   "summary": {
-    "total_concerts": 512,
-    "total_musicians": 396
+    "total_concerts": 536,
+    "total_musicians": 408
   },
   "rows": [
     {
@@ -707,6 +707,15 @@
       "Setlist": ""
     },
     {
+      "Date": "",
+      "Artist": "",
+      "Festival": "",
+      "Venue": "",
+      "City": "",
+      "Country": "",
+      "Setlist": ""
+    },
+    {
       "Date": "28-11-10",
       "Artist": "Gallows",
       "Festival": "",
@@ -1319,6 +1328,150 @@
       "Setlist": ""
     },
     {
+      "Date": "24-8-13",
+      "Artist": "Mallory Knox",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "Lower Than Atlantis",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "The Blackout",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "Deaf Havana",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "Twin Atlantic",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "White Lies",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "Imagine Dragons",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "Chase & Status",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-8-13",
+      "Artist": "Eminem",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Dinosaur Pile-Up",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Don Broco",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Arcane Roots",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Editors",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Fall Out Boy",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Nine Inch Nails",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "25-8-13",
+      "Artist": "Biffy Clyro",
+      "Festival": "Reading",
+      "Venue": "Little John's Farm",
+      "City": "Reading",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
       "Date": "23-11-13",
       "Artist": "Queens Of The Stone Age",
       "Festival": "",
@@ -1607,6 +1760,33 @@
       "Setlist": ""
     },
     {
+      "Date": "11-12-16",
+      "Artist": "Drug Church",
+      "Festival": "",
+      "Venue": "The Haunt",
+      "City": "Brighton",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "11-12-16",
+      "Artist": 68,
+      "Festival": "",
+      "Venue": "The Haunt",
+      "City": "Brighton",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "11-12-16",
+      "Artist": "Every Time I Die",
+      "Festival": "",
+      "Venue": "The Haunt",
+      "City": "Brighton",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
       "Date": "26-1-17",
       "Artist": "The Dillinger Escape Plan",
       "Festival": "",
@@ -1681,6 +1861,42 @@
     {
       "Date": "10-11-17",
       "Artist": "Beatsteaks",
+      "Festival": "",
+      "Venue": "KOKO",
+      "City": "London",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-11-17",
+      "Artist": "Higher Power",
+      "Festival": "",
+      "Venue": "KOKO",
+      "City": "London",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-11-17",
+      "Artist": "Knocked Loose",
+      "Festival": "",
+      "Venue": "KOKO",
+      "City": "London",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-11-17",
+      "Artist": "Comeback Kid",
+      "Festival": "",
+      "Venue": "KOKO",
+      "City": "London",
+      "Country": "England",
+      "Setlist": ""
+    },
+    {
+      "Date": "24-11-17",
+      "Artist": "Every Time I Die",
       "Festival": "",
       "Venue": "KOKO",
       "City": "London",
